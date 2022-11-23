@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid >
+        <Grid>
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+            
+            <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,710,0" >
+                <Button Name="btn_ProductPage" Content="Produkter" Click="btn_ProductPage_Click"/>
+                <Button Name="btn_place_order" Content="Skapa order" Click="btn_place_order_Click"/>
+            </StackPanel>
+
+            <Frame Name="MainFrame" Grid.Column="1" VerticalAlignment="Top"  NavigationUIVisibility="Hidden" Margin="30,0,0,0"/>
+
+        </Grid>
+    </Grid>
+</Window>

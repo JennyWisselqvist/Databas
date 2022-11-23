@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UserSecretsId>ed2818e7-0f32-4819-97eb-97e5c1072266</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\CustomerPage.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Pages\CustomerPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="Microsoft.EntityFrameWorkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameWorkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameWorkCore.tools" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>
